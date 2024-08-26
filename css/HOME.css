@@ -1,0 +1,161 @@
+.content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1.5rem;  
+    height: inherit;
+ }
+
+.title{
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    color: #abcdef;
+    padding: 20px; 
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.paragraph{
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+    width: 45%;
+}
+.shoe-background{  
+    position: absolute;
+    right: 0;
+    top: 40px; 
+    height: 100%;
+    width: 45%;  
+    background: url("../images/JORDAN1.png");
+    background-repeat: no-repeat;
+  }
+.shoe{
+    position: absolute;
+    right: 0;
+    top: 20px; 
+    height: 75%;
+    width: 45%;  
+  }
+.shoe:hover{
+    background-color: #89346d;
+    opacity: 0;
+    cursor: pointer;
+}
+.store{
+    position: absolute;
+    right: 200px;
+    bottom: 30px;
+}
+.storeh2{
+    color: rebeccapurple;
+    font-size: 2.5em;
+}
+.storeul{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform:lowercase;
+    list-style-type: circle;
+}
+.btn{
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    background-color: #89346d;
+    border-color: #89346d;
+    box-shadow: 10px 50px 67px rgba(0, 0, 0,0.6);
+    font-size: 20px;
+    cursor: pointer;
+}
+.btna{
+    text-decoration: none;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.btn:hover{
+    background-color: darkslategray;
+    border-color: darkslategray; 
+    opacity: 0.8; 
+    transition: 0.6s;
+}
+.btna:hover{
+    color:white;
+    opacity: 0.8;
+    font-family:cursive ;
+    transition:2s;
+}
+@media only screen and (max-width:1327px){
+    .content{
+      height: 1205px;;
+    }
+    .shoe{
+        right: 45px;
+    }
+}
+
+@media only screen and (max-width:1100px){
+    .content{
+        display: block;
+        height: 1900px;
+    }
+    .shoe-background{
+        position: absolute;
+        top: 500px;
+        left: 10px;
+        max-width: 300px;
+        max-height: 500px;         
+    }
+    .shoe{
+        position: absolute;
+        top: 500px;
+        left: 20px;
+        max-width: 900px;
+        max-height: 600px;         
+    }
+}
+@media only screen and (max-width:900px){
+    .content{
+        display: block;
+        height: 1200px;
+    }
+    .title{
+        width: 30px;
+        height: 3px;
+      
+    }
+    .paragraph{
+        position: absolute;
+        top: 180px;
+        transition: 0.5s;
+    }
+    .btn{
+        top: 850px;
+        height: 70px;
+       }
+    .shoe-background{
+        max-width: 200px;
+        max-height: 200px; 
+    }
+    .shoe{
+            position: absolute;
+            top: 500px;
+            left: 10px;
+            max-width: 300px;
+            max-height: 300px;        
+        }
+    .store{
+        position: absolute;
+        top: 60em;
+        left: 5%;
+    }
+    .storeul{
+        margin-left:50px;
+        margin-top: 20px;
+    }
+}
