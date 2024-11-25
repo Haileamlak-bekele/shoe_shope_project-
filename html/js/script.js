@@ -8,16 +8,16 @@ hamburgur.onclick=function(){
 /*for homepage*/
 function changeBg(){
     const image=[
-        'url("../images/jordan3.png")',
-        'url("../images/nike5.png")',
-        'url("../images/puma7.png")',
-        'url("../images/jordan6.png")',
-        'url("../images/nike3.png")',
-        'url("../images/jordan4.png")',
-        'url("../images/nike6.png")',
-        'url("../images/jordan5.png")',
-        'url("../images/puma6.png")',
-        'url("../images/puma3.png")',
+        'url("./images/jordan3.png")',
+        'url("./images/nike5.png")',
+        'url("./images/puma7.png")',
+        'url("./images/jordan6.png")',
+        'url("./images/nike3.png")',
+        'url("./images/jordan4.png")',
+        'url("./images/nike6.png")',
+        'url("./images/jordan5.png")',
+        'url("./images/puma6.png")',
+        'url("./images/puma3.png")',
     ]
     const shoeImage=document.querySelector(".shoe-background")
     const bg=image[Math.floor(Math.random()*image.length)];
